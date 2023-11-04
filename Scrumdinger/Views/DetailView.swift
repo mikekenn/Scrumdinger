@@ -10,18 +10,18 @@ import SwiftUI
 
 struct DetailView: View {
     let scrum: DailyScrum
-
+    
     @State private var isPresentingEditView = false
-
+    
     var body: some View {
         List {
-            Section(header: Text("Meeting Info")){
-                NavigationLink(destination: MeetingView()){
+            Section(header: Text("Meeting Info")) {
+                NavigationLink(destination: MeetingView()) {
                     Label("Start Meeting", systemImage: "timer")
                         .font(.headline)
                         .foregroundColor(.accentColor)
                 }
-                HStack{
+                HStack {
                     Label("Length", systemImage: "clock")
                     Spacer()
                     Text("\(scrum.lengthInMinutes) minutes")
@@ -34,12 +34,12 @@ struct DetailView: View {
                         .padding(4)
                         .foregroundColor(scrum.theme.accentColor)
                         .background(scrum.theme.mainColor)
-                        .cornerRadius(4.0)
+                        .cornerRadius(4)
                 }
                 .accessibilityElement(children: .combine)
             }
             Section(header: Text("Attendees")) {
-                ForEach(scrum.attendees){ attendee in
+                ForEach(scrum.attendees) { attendee in
                     Label(attendee.name, systemImage: "person")
                 }
             }
@@ -53,6 +53,14 @@ struct DetailView: View {
         .sheet(isPresented: $isPresentingEditView) {
             NavigationStack {
                 DetailEditView()
+                    .navigationTitle(scrum.title)
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Cancel") {
+                                isPresentingEditView = false
+                            }
+                        }
+                    }
             }
         }
     }
