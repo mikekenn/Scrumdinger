@@ -16,6 +16,11 @@ struct DetailView: View {
         List {
             Section(header: Text("Meeting Info")){
                 Label("Start Meeting", systemImage: "timer")
+                    .font(.headline)
+                    .foregroundColor(.accentColor)
+                HStack{
+                    Label("Length", systemImage: "clock")
+                }
             }
         }
     }
