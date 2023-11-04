@@ -9,6 +9,8 @@ import SwiftUI
 
 
 struct DetailEditView: View {
+    @State private var scrum = DailyScrum.emptyScrum
+    
     var body: some View {
         Text("Hello, World!")
     }
