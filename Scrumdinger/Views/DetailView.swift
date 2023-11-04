@@ -20,6 +20,8 @@ struct DetailView: View {
                     .foregroundColor(.accentColor)
                 HStack{
                     Label("Length", systemImage: "clock")
+                    Spacer()
+                    Text("\(scrum.lengthInMinutes) minutes")
                 }
             }
         }
