@@ -42,6 +42,7 @@ struct DetailEditView: View {
                             newAttendeeName = ""
                         }
                     }) {Image(systemName: "plus.circle.fill")
+                            .accessibilityLabel("Add attendee")
                     }
                     .disabled(newAttendeeName.isEmpty)
                 }
