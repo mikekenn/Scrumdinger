@@ -26,7 +26,10 @@ struct DetailView: View {
                 .accessibilityElement(children: .combine)
                 HStack {
                     Label("Theme", systemImage: "paintpalette")
+                    Spacer()
+                    Text(scrum.theme.name)
                 }
+                .accessibilityElement(children: .combine)
             }
         }
     }
