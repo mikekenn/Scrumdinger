@@ -31,6 +31,9 @@ struct DetailEditView: View {
                 .onDelete { indices in
                     scrum.attendees.remove(atOffsets: indices)
                 }
+                HStack {
+                    TextField("New Attendee", text: $newAttendeeName)
+                }
             }
         }
     }
