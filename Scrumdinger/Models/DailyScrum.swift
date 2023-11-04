@@ -24,6 +24,13 @@ struct DailyScrum: Identifiable {
 }
 
 extension DailyScrum {
+    struct Attendee: Identifiable {
+        let id: UUID
+        var name: String
+    }
+}
+
+extension DailyScrum {
     static let sampleData: [DailyScrum] =
     [
         DailyScrum(title: "Design",
