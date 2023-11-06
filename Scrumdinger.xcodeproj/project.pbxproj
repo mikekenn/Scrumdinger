@@ -19,6 +19,7 @@
 		4C665CA72AF60AD600075F4B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C665CA62AF60AD600075F4B /* DetailView.swift */; };
 		4C665CA92AF61EC100075F4B /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C665CA82AF61EC000075F4B /* DetailEditView.swift */; };
 		4CA0C13C2AF85D22004DCC96 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C13B2AF85D22004DCC96 /* ThemeView.swift */; };
+		4CA0C13E2AF863CF004DCC96 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C13D2AF863CF004DCC96 /* ThemePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		4C665CA62AF60AD600075F4B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4C665CA82AF61EC000075F4B /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		4CA0C13B2AF85D22004DCC96 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		4CA0C13D2AF863CF004DCC96 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				4C665CA62AF60AD600075F4B /* DetailView.swift */,
 				4C665CA82AF61EC000075F4B /* DetailEditView.swift */,
 				4CA0C13B2AF85D22004DCC96 /* ThemeView.swift */,
+				4CA0C13D2AF863CF004DCC96 /* ThemePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA0C13E2AF863CF004DCC96 /* ThemePicker.swift in Sources */,
 				4C665C9E2AF47A4F00075F4B /* DailyScrum.swift in Sources */,
 				4C665CA72AF60AD600075F4B /* DetailView.swift in Sources */,
 				4C665CA92AF61EC100075F4B /* DetailEditView.swift in Sources */,
