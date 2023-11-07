@@ -11,6 +11,7 @@ import SwiftUI
 struct DetailView: View {
     let scrum: DailyScrum
     
+    @State private var editingScrum = DailyScrum.emptyScrum
     @State private var isPresentingEditView = false
     
     var body: some View {
