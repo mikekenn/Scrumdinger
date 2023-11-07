@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct DetailView: View {
-    let scrum: DailyScrum
+    @Binding var scrum: DailyScrum
     
     @State private var editingScrum = DailyScrum.emptyScrum
     @State private var isPresentingEditView = false
@@ -65,6 +65,7 @@ struct DetailView: View {
                         ToolbarItem(placement: .confirmationAction) {
                             Button("Done") {
                                 isPresentingEditView = false
+                                scrum = editingScrum
                             }
                         }
                     }
